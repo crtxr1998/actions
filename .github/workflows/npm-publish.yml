@@ -20,5 +20,6 @@ jobs:
       - run: npm ci
       - run: node -v
       - run: ls -i
+      - run: node server-2.js
 
 
