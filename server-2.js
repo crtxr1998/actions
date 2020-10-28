@@ -3,7 +3,7 @@ var https = require("http");
 var express = require("express");
 console.log("Server is running....");
 // /* 创建服务器 */
-// var app = express();
+var app = express();
 
 // /* 接受请求并反馈数据渲染到界面*/
 // app.get("/", function (req, res) {
