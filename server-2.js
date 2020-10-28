@@ -20,7 +20,6 @@ var app = express();
 //     });
 //     console.log("send request");
 // })
-// app.listen(5000, function () {
-
-//     console.log("Server is running....");
-// })
+app.listen(5000, function () {
+    console.log("Server is running....");
+})
