@@ -6,10 +6,10 @@ console.log("Server is running....");
 var app = express();
 
 // /* 接受请求并反馈数据渲染到界面*/
-// app.get("/", function (req, res) {
-//     res.send("I am Server-2-----");
-// })
-https.get("https://api.uomg.com/api/visitor.info?skey=" + Date.now, function (res) {
+app.get("/", function (req, res) {
+    res.send("I am Server-2-----"+Date.now);
+})
+https.get("http://api.uomg.com/api/visitor.info?skey=" + Date.now, function (res) {
     res.on("data", function (chunk) {
         console.log("on data......");
         var result = JSON.parse(JSON.parse(JSON.stringify(chunk + "")))
