@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
+      - run: npm i
       - run: node -v
       - run: cat server-2.js
       - run: node server-2.js
